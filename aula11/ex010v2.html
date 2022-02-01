@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Nacionalidade</h1>
+    <p>
+        Em qual pais você mora? 
+        <input type="string" name="txtpais" id="txtpais">
+        <input type="button" value="Calcular" name="calcular" id="calcular" onclick="calcular()">
+    </p>
+    <div id="res">
+
+    </div>
+    <script>
+        
+        function calcular() {
+            var txtpais = window.document.querySelector('input#txtpais')
+            var pais = String(txtpais.value)
+            var res = document.querySelector('div#res')
+            res.innerHTML = `<p> Você mora em ${pais} </p>`
+            if (pais.toLowerCase() == 'brasil') {
+                res.innerHTML += `<p> Portanto você é Brasileiro! </p>`
+            }else{
+                res.innerHTML += `Portanto você é Estrangeiro!`
+            }
+        }
+
+    </script>
+</body>
+
