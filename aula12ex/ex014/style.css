@@ -1,0 +1,31 @@
+body {
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.2em;
+}
+
+section {
+    
+    width: 700px;
+    height: 400px;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 3px 3px 6px 2px rgba(0, 0, 0, 0.363);
+}
+
+#hora {
+    color: black;
+    padding-top: 10px;
+    font-size: 1.2em;
+}
+
+footer {
+    
+}
