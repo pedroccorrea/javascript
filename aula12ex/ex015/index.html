@@ -1,26 +1,41 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<HTML lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Verificador de Idade</title>
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <meta http-equiv="X=UA-Compatible" content="ie=edge">
+    <title>Verificador de idade</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Verificador de idade</h1>
+        <h1>Verificador de Idade</h1>
     </header>
-    <main>
-        <section>
-            <p>Ano de Nascimento: <input type="number" name="nascimento" id="nascimento"></p>
+    <section>
+        <div>
+            <p>
+                Ano de Nascimento:
+                <input type="number" name="txtano" id="txtano" min="0">
+            </p>
+            <p>
+                Sexo:
+                <input type="radio" name="radsex" id="mas" checked>
+                <label for="mas">Masculino</label>
 
-            <input type="radio" name="sexo" id="Masculino">
-            <label for="Sexo">Masculino</label>
-
-            <input type="radio" name="sexo" id="Feminino">
-            <label for="Sexo">Feminino</label>
-
-        </section>
-    </main>
+                <input type="radio" name="radsex" id="fem">
+                <label for="fem">Feminino</label>
+            </p>
+            <p>
+                <input type="button" value="Verificar" onclick="calcular()">
+            </p>
+        </div>
+        <div id="res">
+            Preencha os dados acima para ver o resultado!
+        </div>
+    </section>
+    <script src="script.js"></script>
 </body>
+<footer>
+    <p>&copy; CursoemVideo</p>
+</footer>
 </html>
